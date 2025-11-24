@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknowns Battle Ground",
+    "coverPhoto": "https://example.com/images/pubg.png",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": "4.5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty Mobile",
+    "coverPhoto": "https://example.com/images/codm.png",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "COD Mobile delivers console-quality action with multiplayer, battle royale, and seasonal events.",
+    "ratings": "4.6",
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Free Fire",
+    "coverPhoto": "https://example.com/images/freefire.png",
+    "category": "Battle Royale",
+    "downloadLink": "https://ff.garena.com/",
+    "description": "A fast survival shooter with short, action-packed matches featuring unique characters and abilities.",
+    "ratings": "4.3",
+    "developer": "Garena"
+  },
+  {
+    "id": "4",
+    "title": "Asphalt 9: Legends",
+    "coverPhoto": "https://example.com/images/asphalt9.png",
+    "category": "Racing",
+    "downloadLink": "https://www.gameloft.com/asphalt-9/",
+    "description": "A high-speed arcade racing game with realistic graphics, dynamic controls, and hundreds of cars.",
+    "ratings": "4.7",
+    "developer": "Gameloft"
+  },
+  {
+    "id": "5",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://example.com/images/genshin.png",
+    "category": "Adventure",
+    "downloadLink": "https://genshin.hoyoverse.com/",
+    "description": "An open-world action RPG with stunning visuals, elemental combat, and rich storytelling.",
+    "ratings": "4.8",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "6",
+    "title": "Subway Surfers",
+    "coverPhoto": "https://example.com/images/subway.png",
+    "category": "Arcade",
+    "downloadLink": "https://subwaysurfers.com/",
+    "description": "A fast-paced endless runner where players dodge trains, obstacles, and collect coins.",
+    "ratings": "4.4",
+    "developer": "SYBO Games"
+  },
+  {
+    "id": "7",
+    "title": "Clash of Clans",
+    "coverPhoto": "https://example.com/images/coc.png",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashofclans/",
+    "description": "A strategic village-building and war game featuring clans, battles, and resource management.",
+    "ratings": "4.6",
+    "developer": "Supercell"
+  },
+  {
+    "id": "8",
+    "title": "Minecraft",
+    "coverPhoto": "https://example.com/images/minecraft.png",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/",
+    "description": "A creative sandbox game where players explore, build, and survive in block-based worlds.",
+    "ratings": "4.8",
+    "developer": "Mojang"
+  },
+  {
+    "id": "9",
+    "title": "Valorant Mobile",
+    "coverPhoto": "https://example.com/images/valorant.png",
+    "category": "FPS",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "A tactical hero-based shooter focusing on strategy, precision, and team play.",
+    "ratings": "4.7",
+    "developer": "Riot Games"
+  }
+]
