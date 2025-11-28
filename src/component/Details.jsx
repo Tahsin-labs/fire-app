@@ -1,88 +1,98 @@
-import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import React, { useEffect, useState } from "react";
+import { useLoaderData, useParams } from "react-router";
 
 const Details = () => {
-
-    const data = useLoaderData()
-    const { id } = useParams()
+    const data = useLoaderData();
+    const { id } = useParams();
     const [app, setApp] = useState({});
-    console.log(data, id, app)
 
     useEffect(() => {
-        const appDetails = data.find(singleApp => singleApp.id == id);
-        setApp(appDetails);
+        const found = data.find((single) => single.id == id);
+        setApp(found);
+    }, [data, id]);
 
-    }, [data, id])
     return (
-        <div>
-            <section class="max-w-6xl mx-auto p-6 mt-6">
+        <div className="relative w-full min-h-screen text-white">
 
-                {/* Game Title  */}
-                <h1 class="text-4xl font-bold mb-4">{app.title}</h1>
+    
+            <div className="absolute inset-0">
+                <img
+                    src={app.cover }
+                    className="w-full h-full object-cover"
+                    alt=""
+                />
+       
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+            </div>
 
-                {/* <!-- Game Cover & Info --> */}
-                <div class="grid md:grid-cols-2 gap-10 mt-6">
+       
+            <section className="relative z-10 max-w-5xl mx-auto pt-24 px-6 pb-20">
 
-                    {/* <!-- Cover Image --> */}
-                    <div>
-                        <img
-                            src="https://i.ibb.co/2W0F2qz/game-cover.jpg"
-                            alt="Game Cover"
-                            class="rounded-xl shadow-lg w-full"
-                        />
+                <p className="text-gray-400 mb-6 tracking-wider">Trailer</p>
+
+           
+                <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">
+                    {app.title}
+                </h1>
+
+          
+                <div className="flex items-center space-x-3 text-gray-300 text-lg">
+                    <span>{app.studio || "Unknown Studio"}</span>
+                    <span className="text-gray-500">•</span>
+                    <span>{app.genre}</span>
+                    <span className="text-gray-500">•</span>
+
+                    <span className="flex items-center">
+                        ⭐⭐⭐⭐⭐
+                        <span className="ml-2">{app.rating}</span>
+                    </span>
+                </div>
+
+             
+                <p className="mt-6 text-gray-300 leading-relaxed max-w-2xl">
+                    {app.description}
+                </p>
+
+               
+                <div className="flex items-center gap-4 mt-8">
+
+                    <button className="px-6 py-3 border-2 border-white rounded-xl bg-white/10 hover:bg-white/20 transition text-lg font-semibold">
+                        BUY ${app.price || "59.99"}
+                    </button>
+
+                    <button className="px-6 py-3 bg-gray-700 rounded-xl hover:bg-gray-600 transition text-lg">
+                        CHOOSE EDITION
+                    </button>
+
+                    <div className="px-4 py-3 bg-gray-700 rounded-xl opacity-40">
+                        ❤
                     </div>
 
-                    {/* <!-- Details --> */}
-                    <div class="space-y-5">
-
-                        {/* <!-- Rating --> */}
-                        <p class="text-lg">
-                            ⭐ <span class="font-semibold">Rating:</span> {app.rating}
-                        </p>
-                        {/* 
-        <!-- Genre --> */}
-                        <p class="text-lg">
-                            🎮 <span class="font-semibold">Genre:</span> {app.genre}
-                        </p>
-                        {/* 
-        <!-- Size --> */}
-                        <p class="text-lg">
-                            📦 <span class="font-semibold">Size:</span> {app.size}
-                        </p>
-
-                        {/* <!-- Release Date --> */}
-                        <p class="text-lg">
-                            📅 <span class="font-semibold">Release:</span> {app.release}
-                        </p>
-
-                        {/* <!-- Description --> */}
-                        <p class="text-gray-300 leading-relaxed">
-                            {app.description}
-                        </p>
-
-                        {/* <!-- Download Button --> */}
-                        <button class="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-lg text-lg font-semibold">
-                            ⬇ Download Now
-                        </button>
-
+                    <div className="px-4 py-3 bg-gray-700 rounded-xl opacity-40">
+                        🛒
                     </div>
                 </div>
 
+                <div className="mt-10 flex items-center gap-3">
+                    <div className="bg-yellow-500 text-black px-3 py-2 font-bold text-xl rounded">
+                        {app.pegi || "16"}
+                    </div>
+                    <p className="text-gray-400">Violence</p>
+                </div>
 
+       
+                <div className="mt-16">
+                    <h2 className="text-3xl font-bold mb-4">System Requirements</h2>
 
-
-
-                {/* <!-- System Requirements --> */}
-                <h2 class="text-2xl font-bold mt-12 mb-4">System Requirements</h2>
-
-                <div class="bg-gray-800 p-6 rounded-xl">
-                    <ul class="space-y-2 text-gray-300">
-                        <li>✔ OS:{app.os}</li>
-                        <li>✔ Processor: {app.processor}</li>
-                        <li>✔ RAM: {app.ram} GB</li>
-                        <li>✔ Graphics:{app.graphics}</li>
-                        <li>✔ Storage:{app.storage}</li>
-                    </ul>
+                    <div className="bg-black/40 backdrop-blur-md p-6 rounded-xl border border-white/10 max-w-xl">
+                        <ul className="space-y-2 text-gray-300">
+                            <li>✔ OS: {app.os}</li>
+                            <li>✔ Processor: {app.processor}</li>
+                            <li>✔ RAM: {app.ram} GB</li>
+                            <li>✔ Graphics: {app.graphics}</li>
+                            <li>✔ Storage: {app.storage}</li>
+                        </ul>
+                    </div>
                 </div>
 
             </section>

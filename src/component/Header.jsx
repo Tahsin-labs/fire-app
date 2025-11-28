@@ -44,7 +44,7 @@ const Header = () => {
 
                     {
                         user ? <div className='flex gap-2'> <Link to="/profile"> <img className='w-12 rounded-full' src={`${user ? user.photoURL : ""}`} alt="" /></Link>
-                            <button onClick={handleLogout}>Logout</button>
+                            <button  className='btn btn-active btn-error text-white' onClick={handleLogout}>Logout</button>
                         </div>
 
                             : <div className='flex gap-2'>

@@ -3,11 +3,15 @@
     "id": 1,
     "title": "Cyber Hunt: Ultimate Edition",
     "rating": 4.8,
-    "genre": ["Action", "Sci-Fi", "Shooter"],
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Shooter"
+    ],
     "size": "2.5 GB",
     "release": "2024",
     "description": "A futuristic shooter where you battle rogue AI robots across neon-lit cities and upgrade powerful weapons.",
-    "cover": "https://i.ibb.co/2W0F2qz/game-cover.jpg",
+    "cover": "https://i.ibb.co/LDW9HBYY/f7e5c999857701-5efc0ba660ffd.jpg",
     "screenshots": [
       "https://i.ibb.co/3fs1RnB/ss1.jpg",
       "https://i.ibb.co/ZK1x4Mw/ss2.jpg",
@@ -25,11 +29,15 @@
     "id": 2,
     "title": "Shadow Blade Zero",
     "rating": 4.6,
-    "genre": ["Action", "Stealth", "Adventure"],
+    "genre": [
+      "Action",
+      "Stealth",
+      "Adventure"
+    ],
     "size": "1.8 GB",
     "release": "2023",
     "description": "Play as a silent assassin in a world of shadows. Use stealth, speed, and precision to defeat enemies.",
-    "cover": "https://i.ibb.co/p3VH3kG/cover1.jpg",
+    "cover": "https://i.ibb.co/LDW9HBYY/f7e5c999857701-5efc0ba660ffd.jpg",
     "screenshots": [
       "https://i.ibb.co/nMhGgbL/ss1.jpg",
       "https://i.ibb.co/p4BVwQK/ss2.jpg",
@@ -47,7 +55,10 @@
     "id": 3,
     "title": "Racing Nitro X",
     "rating": 4.4,
-    "genre": ["Racing", "Sports"],
+    "genre": [
+      "Racing",
+      "Sports"
+    ],
     "size": "3.2 GB",
     "release": "2022",
     "description": "High-speed racing game with realistic physics, drifting mechanics, and exotic supercars.",
@@ -69,7 +80,11 @@
     "id": 4,
     "title": "Galaxy Wars: Beyond Stars",
     "rating": 4.7,
-    "genre": ["Strategy", "Space", "War"],
+    "genre": [
+      "Strategy",
+      "Space",
+      "War"
+    ],
     "size": "4.1 GB",
     "release": "2024",
     "description": "Command fleets, conquer galaxies, and fight alien civilizations in this massive space strategy game.",
@@ -91,7 +106,11 @@
     "id": 5,
     "title": "Zombie Riot 5",
     "rating": 4.3,
-    "genre": ["Horror", "Shooter", "Survival"],
+    "genre": [
+      "Horror",
+      "Shooter",
+      "Survival"
+    ],
     "size": "5.6 GB",
     "release": "2023",
     "description": "Survive endless waves of zombies, craft weapons, and rescue lost survivors in a destroyed world.",
@@ -113,7 +132,11 @@
     "id": 6,
     "title": "Fantasy Legends",
     "rating": 4.9,
-    "genre": ["RPG", "Adventure", "Magic"],
+    "genre": [
+      "RPG",
+      "Adventure",
+      "Magic"
+    ],
     "size": "6.4 GB",
     "release": "2024",
     "description": "Enter a mystical world full of dragons, magic, kingdoms, and powerful heroes. An open-world RPG adventure.",
@@ -135,7 +158,11 @@
     "id": 7,
     "title": "Battle Royale: Reloaded",
     "rating": 4.5,
-    "genre": ["Shooter", "Multiplayer", "Battle Royale"],
+    "genre": [
+      "Shooter",
+      "Multiplayer",
+      "Battle Royale"
+    ],
     "size": "3.9 GB",
     "release": "2022",
     "description": "A fast-paced battle royale where 100 players fight to survive using weapons, vehicles, and teamwork.",
@@ -157,7 +184,10 @@
     "id": 8,
     "title": "Street Fight Legends",
     "rating": 4.2,
-    "genre": ["Fighting", "Action"],
+    "genre": [
+      "Fighting",
+      "Action"
+    ],
     "size": "1.4 GB",
     "release": "2021",
     "description": "A classic arcade-style fighting game with combos, special moves, and powerful characters.",
@@ -179,7 +209,11 @@
     "id": 9,
     "title": "Farm Life Simulator",
     "rating": 4.1,
-    "genre": ["Simulation", "Casual", "Relaxing"],
+    "genre": [
+      "Simulation",
+      "Casual",
+      "Relaxing"
+    ],
     "size": "900 MB",
     "release": "2023",
     "description": "Grow crops, raise animals, upgrade your farm, and enjoy a peaceful countryside life.",
@@ -201,7 +235,11 @@
     "id": 10,
     "title": "Mystery Mansion",
     "rating": 4.0,
-    "genre": ["Horror", "Puzzle", "Mystery"],
+    "genre": [
+      "Horror",
+      "Puzzle",
+      "Mystery"
+    ],
     "size": "1.2 GB",
     "release": "2022",
     "description": "Explore a haunted mansion, solve puzzles, uncover secrets, and escape the mysterious darkness.",

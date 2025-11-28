@@ -14,6 +14,7 @@ import AuthProvider from './Provider/AuthProvider.jsx';
 import Details from './component/Details.jsx';
 import PrivateRout from './component/PrivateRout.jsx';
 import Profile from './component/Profile.jsx';
+import ForgetPassword from './component/ForgetPassword.jsx';
 
 
 const router = createBrowserRouter([
@@ -39,15 +40,20 @@ const router = createBrowserRouter([
       },
       {
         path: "details/:id",
-        element:(<PrivateRout>
+        element: (<PrivateRout>
           <Details></Details>
         </PrivateRout>),
-        loader: ()=> fetch("/detailsapk.json"),
+        loader: () => fetch("/detailsapk.json"),
       },
       {
         path: "profile",
         Component: Profile,
       },
+      {
+        path: "/forget-password",
+        Component: ForgetPassword
+      }
+
 
     ]
   }

@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged,  signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import app from '../Firebase/Fire.config';
 
 export const AuthContext = createContext()
@@ -40,6 +40,13 @@ const AuthProvider = ({ children }) => {
   }
 
 
+
+
+    // const handleForgetPass=( email)=>{
+    //       sendPasswordResetEmail(auth , email)
+  
+    //   }
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -64,6 +71,8 @@ const AuthProvider = ({ children }) => {
     setLoding,
     updateUser,
     handleGoogleIn,
+    auth,
+    
   };
   return <AuthContext value={authData}>{children}</AuthContext>
 };
