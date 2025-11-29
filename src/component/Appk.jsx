@@ -4,8 +4,12 @@ import { Link, Links } from 'react-router';
 const Appk = ({ app }) => {
 
     const {id, title, description } = app;
+    console.log(app)
     return (
         <div>
+
+
+            
             <Link to={`/details/${id}`}>
                 <div className="card bg-base-100 w-96 shadow-sm ">
                     <figure>
