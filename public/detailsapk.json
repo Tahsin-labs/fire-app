@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Cyber Hunt: Ultimate Edition",
+    "title": "Player Unknowns Battle Ground",
     "rating": 4.8,
     "genre": [
       "Action",
@@ -27,7 +27,7 @@
   },
   {
     "id": 2,
-    "title": "Shadow Blade Zero",
+    "title": "Call of Duty Mobile",
     "rating": 4.6,
     "genre": [
       "Action",
@@ -37,7 +37,7 @@
     "size": "1.8 GB",
     "release": "2023",
     "description": "Play as a silent assassin in a world of shadows. Use stealth, speed, and precision to defeat enemies.",
-    "cover": "https://i.ibb.co/LDW9HBYY/f7e5c999857701-5efc0ba660ffd.jpg",
+    "cover": "https://i.ibb.co/KcqQ480S/346190abf755e3883d1353fbc8d8ccb7e1acf076f1138d6b.jpg",
     "screenshots": [
       "https://i.ibb.co/nMhGgbL/ss1.jpg",
       "https://i.ibb.co/p4BVwQK/ss2.jpg",
@@ -53,7 +53,7 @@
   },
   {
     "id": 3,
-    "title": "Racing Nitro X",
+    "title": "Free Fire",
     "rating": 4.4,
     "genre": [
       "Racing",
@@ -62,7 +62,7 @@
     "size": "3.2 GB",
     "release": "2022",
     "description": "High-speed racing game with realistic physics, drifting mechanics, and exotic supercars.",
-    "cover": "https://i.ibb.co/3frWyCN/cover2.jpg",
+    "cover": "https://i.ibb.co/Lz6V63RW/aa959aa3d8790d3a44f7f20f16adfa01.jpg",
     "screenshots": [
       "https://i.ibb.co/rtzYLLC/ss1.jpg",
       "https://i.ibb.co/JBQcq5p/ss2.jpg",
@@ -78,7 +78,7 @@
   },
   {
     "id": 4,
-    "title": "Galaxy Wars: Beyond Stars",
+    "title": "Asphalt 9",
     "rating": 4.7,
     "genre": [
       "Strategy",
@@ -88,7 +88,7 @@
     "size": "4.1 GB",
     "release": "2024",
     "description": "Command fleets, conquer galaxies, and fight alien civilizations in this massive space strategy game.",
-    "cover": "https://i.ibb.co/8spzW2m/cover3.jpg",
+    "cover": "https://i.ibb.co/23d116F3/images-5.jpg",
     "screenshots": [
       "https://i.ibb.co/LYKchJx/ss1.jpg",
       "https://i.ibb.co/MZPcJhy/ss2.jpg",
@@ -104,7 +104,7 @@
   },
   {
     "id": 5,
-    "title": "Zombie Riot 5",
+    "title": "Genshin Impact",
     "rating": 4.3,
     "genre": [
       "Horror",
@@ -114,7 +114,7 @@
     "size": "5.6 GB",
     "release": "2023",
     "description": "Survive endless waves of zombies, craft weapons, and rescue lost survivors in a destroyed world.",
-    "cover": "https://i.ibb.co/6WrnSds/cover4.jpg",
+    "cover": "https://i.ibb.co/Fkqm14C5/588720a686e20fc3d0ed0fa5d42b10d0981341dde320e3c6.jpg",
     "screenshots": [
       "https://i.ibb.co/559W9wd/ss1.jpg",
       "https://i.ibb.co/9h3Yb0H/ss2.jpg",
@@ -130,7 +130,7 @@
   },
   {
     "id": 6,
-    "title": "Fantasy Legends",
+    "title": "Subway Surfers",
     "rating": 4.9,
     "genre": [
       "RPG",
@@ -140,7 +140,7 @@
     "size": "6.4 GB",
     "release": "2024",
     "description": "Enter a mystical world full of dragons, magic, kingdoms, and powerful heroes. An open-world RPG adventure.",
-    "cover": "https://i.ibb.co/JC5XwLs/cover5.jpg",
+    "cover": "https://i.ibb.co/3yJW86sm/img-9060.webp",
     "screenshots": [
       "https://i.ibb.co/vhNpXgN/ss1.jpg",
       "https://i.ibb.co/w7gb2ph/ss2.jpg",
@@ -156,7 +156,7 @@
   },
   {
     "id": 7,
-    "title": "Battle Royale: Reloaded",
+    "title": "Clash of Clans",
     "rating": 4.5,
     "genre": [
       "Shooter",
@@ -166,7 +166,7 @@
     "size": "3.9 GB",
     "release": "2022",
     "description": "A fast-paced battle royale where 100 players fight to survive using weapons, vehicles, and teamwork.",
-    "cover": "https://i.ibb.co/whF1srk/cover6.jpg",
+    "cover": "https://i.ibb.co/s9FJzf3R/og-clashofclans-f3149338.jpg",
     "screenshots": [
       "https://i.ibb.co/pWbjncj/ss1.jpg",
       "https://i.ibb.co/7yJNJSk/ss2.jpg",
@@ -182,7 +182,7 @@
   },
   {
     "id": 8,
-    "title": "Street Fight Legends",
+    "title": "Minecraft",
     "rating": 4.2,
     "genre": [
       "Fighting",
@@ -191,7 +191,7 @@
     "size": "1.4 GB",
     "release": "2021",
     "description": "A classic arcade-style fighting game with combos, special moves, and powerful characters.",
-    "cover": "https://i.ibb.co/wcTd7sn/cover7.jpg",
+    "cover": "https://i.ibb.co/4np0wdbc/0a33bcaba879403460afe2ff2aafaaefeede964e0fc11a430f71077867cc87f1.jpg",
     "screenshots": [
       "https://i.ibb.co/181cvKg/ss1.jpg",
       "https://i.ibb.co/5FwjV0q/ss2.jpg",
@@ -207,7 +207,7 @@
   },
   {
     "id": 9,
-    "title": "Farm Life Simulator",
+    "title": "Valorant Mobile",
     "rating": 4.1,
     "genre": [
       "Simulation",
@@ -217,7 +217,7 @@
     "size": "900 MB",
     "release": "2023",
     "description": "Grow crops, raise animals, upgrade your farm, and enjoy a peaceful countryside life.",
-    "cover": "https://i.ibb.co/VSYMyyw/cover8.jpg",
+    "cover": "https://i.ibb.co/tTx70qVT/images-7.jpg",
     "screenshots": [
       "https://i.ibb.co/FwP2JN5/ss1.jpg",
       "https://i.ibb.co/7bYRVFp/ss2.jpg",

@@ -2,7 +2,7 @@ import React, { use, useRef, useState } from 'react';
 import { Link, NavLink, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 // import { sendPasswordResetEmail } from 'firebase/auth';
-import { toast, Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -102,8 +102,8 @@ const Login = () => {
 
 
 
-                        <Link to="/forget-password"><button type='button'className='hover:underline cursor-pointer'>  Forgot password?</button></Link>
-                        
+                        <Link to="/forget-password"><button type='button' className='hover:underline cursor-pointer'>  Forgot password?</button></Link>
+
 
 
 
