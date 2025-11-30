@@ -6,10 +6,10 @@ const Footer = () => {
             <footer className="bg-[#0a0a0f] text-gray-300 py-12 px-6 mt-20 border-t border-gray-700/40">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
 
-                   
+
                     <div>
                         <h2 className="text-3xl font-extrabold tracking-wider text-white">
-                            TahsinLAB...<span className="text-blue-500">.</span>
+                            <span className="text-blue-500">TahsinLAB...</span>
                         </h2>
                         <p className="text-sm opacity-70 mt-3 leading-relaxed">
                             GameHub is a platform where players can explore indie games,
@@ -17,7 +17,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                  
+
                     <div>
                         <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
                         <ul className="space-y-2 text-sm">
@@ -28,7 +28,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                  
+
                     <div>
                         <h3 className="text-lg font-semibold text-white mb-4">About Us</h3>
                         <p className="text-sm opacity-70 leading-relaxed mb-4">
@@ -46,7 +46,7 @@ const Footer = () => {
 
                 </div>
 
-               
+
             </footer>
 
         </div>

@@ -6,7 +6,7 @@ const appPromise = fetch("/homeApp.json").then((res) => res.json());
 
 const Home = () => {
     const homeApp = use(appPromise);
-    const { user } = use(AuthContext);
+    // const { user } = use(AuthContext);
 
     return (
         <div className="pb-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen">
@@ -17,9 +17,9 @@ const Home = () => {
                 data-aos="zoom-in"
                 data-aos-duration="1200"
             >
-                <p className="text-right text-gray-400 text-sm">
+                {/* <p className="text-right text-gray-400 text-sm">
                     {user && user.email}
-                </p>
+                </p> */}
 
                 <div className="carousel w-full rounded-xl overflow-hidden shadow-[0_0_25px_rgba(255,0,255,0.3)]">
                 
