@@ -9,7 +9,7 @@ const Appk = ({ app }) => {
         <Link to={`/details/${id}`} className="block">
             <div className="card bg-base-100 w-full shadow-md hover:shadow-lg transition-shadow duration-300 rounded-xl overflow-hidden">
 
-                {/* IMAGE */}
+                
                 <figure className="h-48 sm:h-52 md:h-56 lg:h-64">
                     <img
                         className="w-full h-full object-cover"
@@ -18,7 +18,7 @@ const Appk = ({ app }) => {
                     />
                 </figure>
 
-                {/* CARD BODY */}
+            
                 <div className="   bg-gray-600 card-body p-4">
                     <h2 className="card-title text-lg md:text-xl">{title}</h2>
 
@@ -26,10 +26,10 @@ const Appk = ({ app }) => {
                         {description}
                     </p>
 
-                    {/* FOOTER TAGS */}
+                    
                     <div className="flex justify-between items-center mt-4">
 
-                        {/* DOWNLOAD BUTTON */}
+                        
                         <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded flex gap-2 items-center">
                             <img
                                 src={'https://i.ibb.co.com/3YdrfN8k/fi-18110198.png'}
@@ -39,7 +39,7 @@ const Appk = ({ app }) => {
                             <button>Download</button>
                         </span>
 
-                        {/* RATINGS */}
+                        
                         <span className="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded flex items-center gap-2">
                             <img
                                 src={'https://i.ibb.co.com/sv4h3zmJ/icon-ratings.png'}

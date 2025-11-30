@@ -61,7 +61,7 @@ const Register = () => {
                 backgroundImage: `url('https://i.ibb.co/CsQ8P2zB/Eo-Rvvd-QR4-S3o-XLEb-TYPx-FW.jpg')`,
             }}
         >
-            {/* Glass Panel */}
+        
             <div className="
                 backdrop-blur-xl bg-white/10 border border-white/20
                 shadow-2xl rounded-2xl p-8 w-full max-w-sm
@@ -72,7 +72,7 @@ const Register = () => {
 
                 <form onSubmit={handleRegister} className="space-y-4">
 
-                    {/* Name */}
+                
                     <div>
                         <label className="text-white/80 text-sm">Name</label>
                         <input
@@ -88,7 +88,7 @@ const Register = () => {
                         />
                     </div>
 
-                    {/* Photo URL */}
+                
                     <div>
                         <label className="text-white/80 text-sm">Photo URL</label>
                         <input
@@ -104,7 +104,7 @@ const Register = () => {
                         />
                     </div>
 
-                    {/* Email */}
+        
                     <div>
                         <label className="text-white/80 text-sm">Email</label>
                         <input
@@ -120,7 +120,7 @@ const Register = () => {
                         />
                     </div>
 
-                    {/* Password */}
+                    
                     <div>
                         <label className="text-white/80 text-sm">Password</label>
                         <input
@@ -139,7 +139,7 @@ const Register = () => {
                         )}
                     </div>
 
-                    {/* Google Registration */}
+                    
                     <button
                         type="button"
                         onClick={signGoogleRag}
@@ -158,7 +158,7 @@ const Register = () => {
                         Register with Google
                     </button>
 
-                    {/* Register Button */}
+                
                     <button
                         type="submit"
                         className="

@@ -29,7 +29,7 @@ const ForgetPassword = () => {
     return (
         <div className="min-h-screen flex items-center justify-center bg-white px-6">
 
-            {/* Left Illustration Section */}
+            
             <div className="hidden md:flex w-1/2 items-center justify-center">
                 <img
                     src="https://i.ibb.co/F4g060hS/forgot-password-concept-illustration-86047-1067.jpg"
@@ -38,7 +38,7 @@ const ForgetPassword = () => {
                 />
             </div>
 
-            {/* Right Content */}
+            
             <div className="w-full md:w-1/2 p-8">
                 <h1 className="text-4xl font-semibold text-gray-900">Forgot Password</h1>
                 <p className="text-gray-600 mt-2">
@@ -49,7 +49,7 @@ const ForgetPassword = () => {
                     onSubmit={handleForgetPass}
                     className="mt-6 space-y-6">
 
-                    {/* Email Input */}
+                    
                     <div>
                         <label className="text-gray-600 block mb-1">Enter Email Address</label>
                         <input
@@ -64,7 +64,7 @@ const ForgetPassword = () => {
                         />
                     </div>
 
-                    {/* Button */}
+                    
                     <button
                         type="submit"
                         className="

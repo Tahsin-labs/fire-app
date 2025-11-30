@@ -21,10 +21,10 @@ const Profile = () => {
         <div className="min-h-screen flex justify-center items-center bg-[#0b0e14] px-4 py-12">
             <section className="w-full max-w-5xl bg-[#11141c] rounded-3xl shadow-xl border border-gray-800 text-gray-200 overflow-hidden">
 
-                {/* Header */}
+                
                 <div className="p-10 md:flex md:items-center md:gap-10 bg-gradient-to-br from-[#171b24] to-[#0f1218]">
 
-                    {/* Avatar */}
+            
                     <div className="flex flex-col items-center text-center md:text-left w-full md:w-1/3">
                         <div className="w-36 h-36 rounded-full overflow-hidden ring-4 ring-blue-600 shadow-xl">
                             <img
@@ -39,11 +39,11 @@ const Profile = () => {
                         </h2>
                         <p className="text-gray-400 text-sm">{user?.email}</p>
                         <p className="text-xs text-gray-500 mt-2">
-                            Member since <span className="font-medium text-blue-400">July 30, 2024</span>
+                            Member since <span className="font-medium text-blue-400">November 30, 2025</span>
                         </p>
                     </div>
 
-                    {/* Update Form */}
+            
                     <form
                         onSubmit={handleUpdate}
                         className="flex-1 mt-10 md:mt-0 bg-[#0d1016] p-8 rounded-2xl border border-gray-700 shadow-md"
@@ -78,7 +78,7 @@ const Profile = () => {
 
                 </div>
 
-                {/* Extra Info Section */}
+        
                 <div className="px-10 py-8 bg-[#0d1016] border-t border-gray-700">
                     <h4 className="text-lg font-semibold mb-6 text-blue-400">Account Details</h4>
 

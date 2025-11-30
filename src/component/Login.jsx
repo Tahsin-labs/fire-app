@@ -35,7 +35,7 @@ const Login = () => {
                 backgroundImage: `url('https://i.ibb.co/CsQ8P2zB/Eo-Rvvd-QR4-S3o-XLEb-TYPx-FW.jpg')`,
             }}
         >
-            {/* Glass Panel */}
+            
             <div className="
                 backdrop-blur-xl bg-white/10 border border-white/20
                 shadow-2xl rounded-2xl p-8 w-full max-w-sm
@@ -47,7 +47,7 @@ const Login = () => {
                         Login
                     </h2>
 
-                    {/* Email */}
+            
                     <label className="text-white/80 text-sm">Email</label>
                     <input
                         ref={emailRef}
@@ -62,7 +62,7 @@ const Login = () => {
                         placeholder="Email"
                     />
 
-                    {/* Password */}
+                
                     <label className="text-white/80 text-sm">Password</label>
                     <input
                         type="password"
@@ -76,7 +76,7 @@ const Login = () => {
                         placeholder="Password"
                     />
 
-                    {/* Forgot password */}
+                    
                     <div className="text-right">
                         <Link className="text-white/70 text-sm hover:underline" to="/forget-password">
                             Forgot password?
@@ -85,7 +85,7 @@ const Login = () => {
 
                     {error && <p className="text-red-400 text-xs">{error}</p>}
 
-                    {/* Google Login */}
+                
                     <button
                         type="button"
                         onClick={signGoogle}
@@ -104,7 +104,7 @@ const Login = () => {
                         Login with Google
                     </button>
 
-                    {/* Main Login Button */}
+                
                     <button
                         type="submit"
                         className="
@@ -118,7 +118,7 @@ const Login = () => {
                     </button>
 
                     <p className="text-center text-white/80 text-sm">
-                        Don’t have an account?{" "}
+                        Don't have an account?{" "}
                         <Link to="/register" className="text-pink-300 font-medium hover:underline">
                             Register
                         </Link>

@@ -19,10 +19,9 @@ const AboutUs = () => {
                     creators showcase their craft.
                 </p>
 
-                {/* Grid Section */}
                 <div className="grid md:grid-cols-3 gap-8 mt-10">
 
-                    {/* Vision */}
+                
                     <div className="bg-[#131620] p-6 rounded-xl shadow-lg shadow-black/40 hover:shadow-indigo-500/20 transition-all">
                         <h3 className="text-xl font-semibold text-white mb-3">
                             Our Vision
@@ -33,7 +32,6 @@ const AboutUs = () => {
                         </p>
                     </div>
 
-                    {/* Team */}
                     <div className="bg-[#131620] p-6 rounded-xl shadow-lg shadow-black/40 hover:shadow-indigo-500/20 transition-all">
                         <h3 className="text-xl font-semibold text-white mb-3">
                             The Team
@@ -44,7 +42,7 @@ const AboutUs = () => {
                         </p>
                     </div>
 
-                    {/* Contact */}
+                    
                     <div className="bg-[#131620] p-6 rounded-xl shadow-lg shadow-black/40 hover:shadow-indigo-500/20 transition-all">
                         <h3 className="text-xl font-semibold text-white mb-3">
                             Contact Us

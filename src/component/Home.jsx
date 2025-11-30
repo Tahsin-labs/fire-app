@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div className="pb-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen">
 
-            {/* Banner Section */}
+            
             <section
                 className="max-w-6xl mx-auto px-4 py-10"
                 data-aos="zoom-in"
@@ -22,7 +22,7 @@ const Home = () => {
                 </p>
 
                 <div className="carousel w-full rounded-xl overflow-hidden shadow-[0_0_25px_rgba(255,0,255,0.3)]">
-                    {/* SLIDE 1 */}
+                
                     <div id="slide1" className="carousel-item relative w-full">
                         <img
                             src="https://i.ibb.co/S7vXh2TT/FQVBS-x-X0-AQNi80.jpg"
@@ -34,7 +34,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    {/* SLIDE 2 */}
+            
                     <div id="slide2" className="carousel-item relative w-full">
                         <img
                             src="https://i.ibb.co/JFC1ympY/free-fortnite-winter-christmas-game-banner-photoshop-template-990x330.jpg"
@@ -46,7 +46,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    {/* SLIDE 3 */}
+                
                     <div id="slide3" className="carousel-item relative w-full">
                         <img
                             src="https://i.ibb.co/99kKh8Q3/free-esports-competition-video-game-themed-banner-psd-template.jpg"
@@ -58,7 +58,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    {/* SLIDE 4 */}
+            
                     <div id="slide4" className="carousel-item relative w-full">
                         <img
                             src="https://i.ibb.co/FbGCzxGm/istockphoto-1308185301-170667a.jpg"
@@ -72,7 +72,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* TRENDING APPS */}
+            
             <section className="py-16 px-4">
                 <div className="container mx-auto">
                     <h2 className="text-4xl font-extrabold text-center mb-4 text-purple-300 drop-shadow-md tracking-wide">
@@ -95,7 +95,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* NEWSLETTER SECTION (Urban Theme) */}
+        
             <section className="py-16 bg-gradient-to-r from-purple-800 via-purple-700 to-purple-900 shadow-inner">
                 <div className="container mx-auto px-6">
                     <div className="max-w-2xl mx-auto text-center">
