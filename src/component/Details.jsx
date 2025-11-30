@@ -75,7 +75,7 @@ const Details = () => {
 
                 <div className="mt-10 flex items-center gap-3">
                     <div className="bg-yellow-500 text-black px-3 py-2 font-bold text-xl rounded">
-                        {app.pegi || "16"}
+                        {app.release || "16"}
                     </div>
                     <p className="text-gray-400">Violence</p>
                 </div>
@@ -86,11 +86,11 @@ const Details = () => {
 
                     <div className="bg-black/40 backdrop-blur-md p-6 rounded-xl border border-white/10 max-w-xl">
                         <ul className="space-y-2 text-gray-300">
-                            <li>✔ OS: {app.os}</li>
-                            <li>✔ Processor: {app.processor}</li>
-                            <li>✔ RAM: {app.ram} GB</li>
-                            <li>✔ Graphics: {app.graphics}</li>
-                            <li>✔ Storage: {app.storage}</li>
+                            <li> OS: {app.os}</li>
+                            <li> Processor: {app.processor}</li>
+                            <li> RAM: {app.ram} GB</li>
+                            <li> Graphics: {app.graphics}</li>
+                            <li> Storage: {app.storage}</li>
                         </ul>
                     </div>
                 </div>

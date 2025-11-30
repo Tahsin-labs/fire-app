@@ -1,143 +1,132 @@
 import React, { use, useRef, useState } from 'react';
-import { Link, NavLink, useLocation, useNavigate } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
-// import { sendPasswordResetEmail } from 'firebase/auth';
 import { Toaster } from "react-hot-toast";
 
-
-
-
-
 const Login = () => {
-    const [error, setError] = useState("")
-    const { signIn, handleGoogleIn } = use(AuthContext)
-    // const { auth } = use(AuthContext)
+    const [error, setError] = useState("");
+    const { signIn, handleGoogleIn } = use(AuthContext);
 
-    const emailRef = useRef(null)
+    const emailRef = useRef(null);
     const location = useLocation();
     const navigate = useNavigate();
-    const handleLogin = (e) => {
 
+    const handleLogin = (e) => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log({ email, password })
-        signIn(email, password).then((result) => {
-            const user = result.user;
-            console.log(user);
-            navigate(`${location.state ? location.state : "/"}`)
-        })
-            .catch((error) => {
-                const errorCode = error.code;
-                // const errorMessage = error.message;
-                // alert(errorCode, errorMessage);
-                setError(errorCode)
-            });
 
-
-    }
-
+        signIn(email, password)
+            .then(result => navigate(location.state || "/"))
+            .catch(err => setError(err.code));
+    };
 
     const signGoogle = () => {
         handleGoogleIn()
-            .then(result => {
-                const user = result.user
-                signIn(user)
-
-            })
-            .catch(err => console.log(err))
-
-
-    }
-
-
-
-
-
-    // }
-
-    // const handleForgetPass = () => {
-    //     const email = emailRef.current.value;
-    //     console.log(email)
-    //     sendPasswordResetEmail(auth, email)
-    //         .then(() => {
-    //             toast.success("Password reset email sent!");
-    //         })
-    //         .catch((err) => {
-    //             console.log(err)
-    //             toast.error("Check your email or create an account first.");
-    //         });
-    // };
-
-
-
-
-
-
-
-
-
-
+            .then(result => signIn(result.user))
+            .catch(err => console.log(err));
+    };
 
     return (
-        <div className='flex justify-center min-h-screen items-center'>
+        <div
+            className="min-h-screen flex items-center justify-center bg-cover bg-center px-3"
+            style={{
+                backgroundImage: `url('https://i.ibb.co/CsQ8P2zB/Eo-Rvvd-QR4-S3o-XLEb-TYPx-FW.jpg')`,
+            }}
+        >
+            {/* Glass Panel */}
+            <div className="
+                backdrop-blur-xl bg-white/10 border border-white/20
+                shadow-2xl rounded-2xl p-8 w-full max-w-sm
+                animate-fadeIn
+            ">
+                <form onSubmit={handleLogin} className="space-y-5">
 
-            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                <form onSubmit={handleLogin} className="card-body">
-                    <h2 className='font-semibold text-2xl text-center'>Login Now</h2>
-                    <fieldset className="fieldset">
-                        {/* email */}
-                        <label className="label">Email</label>
-                        <input ref={emailRef} name="email" type="email" className="input" placeholder="Email"
-                            required />
-                        {/* password  */}
-                        <label className="label">Password</label>
-                        <input name="password" type="password" className="input" placeholder="Password"
-                            required />
-                        {/* forgat password */}
+                    <h2 className="text-white text-3xl font-semibold text-center mb-4 tracking-wide">
+                        Login
+                    </h2>
 
+                    {/* Email */}
+                    <label className="text-white/80 text-sm">Email</label>
+                    <input
+                        ref={emailRef}
+                        type="email"
+                        name="email"
+                        required
+                        className="
+                            w-full px-4 py-2 rounded-lg bg-white/20 text-white 
+                            placeholder-white/60 border border-white/30 
+                            focus:outline-none focus:ring-2 focus:ring-pink-300
+                        "
+                        placeholder="Email"
+                    />
 
+                    {/* Password */}
+                    <label className="text-white/80 text-sm">Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        required
+                        className="
+                            w-full px-4 py-2 rounded-lg bg-white/20 text-white 
+                            placeholder-white/60 border border-white/30 
+                            focus:outline-none focus:ring-2 focus:ring-pink-300
+                        "
+                        placeholder="Password"
+                    />
 
+                    {/* Forgot password */}
+                    <div className="text-right">
+                        <Link className="text-white/70 text-sm hover:underline" to="/forget-password">
+                            Forgot password?
+                        </Link>
+                    </div>
 
+                    {error && <p className="text-red-400 text-xs">{error}</p>}
 
+                    {/* Google Login */}
+                    <button
+                        type="button"
+                        onClick={signGoogle}
+                        className="
+                            w-full flex items-center gap-2 justify-center 
+                            bg-white text-black py-2 rounded-lg 
+                            hover:bg-gray-200 transition
+                        "
+                    >
+                        <svg width="18" height="18" viewBox="0 0 512 512">
+                            <path fill="#EA4335" d="M153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55" />
+                            <path fill="#34A853" d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341" />
+                            <path fill="#4285F4" d="M386 400a140 175 0 0053-179H260v74h102q-7 37-38 57" />
+                            <path fill="#FBBC05" d="M90 341a208 200 0 010-171l63 49q-12 37 0 73" />
+                        </svg>
+                        Login with Google
+                    </button>
 
-                        <Link to="/forget-password"><button type='button' className='hover:underline cursor-pointer'>  Forgot password?</button></Link>
+                    {/* Main Login Button */}
+                    <button
+                        type="submit"
+                        className="
+                            w-full bg-gradient-to-r from-pink-400 to-purple-500
+                            text-white font-semibold py-2 rounded-full
+                            hover:opacity-90 shadow-lg shadow-purple-900/40
+                            transition
+                        "
+                    >
+                        Log In
+                    </button>
 
-
-
-
-
-
-
-
-
-
-                        {
-                            error && <p className='text-red-500 text-xs'>{error}</p>
-                        }
-                        {/* the btn for login */}
-
-
-                        <button onClick={signGoogle} className="btn bg-white text-black border-[#e5e5e5]">
-                            <svg aria-label="Google logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="m0 0H512V512H0" fill="#fff"></path><path fill="#34a853" d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341"></path><path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57"></path><path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"></path><path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path></g></svg>
-                            Login with Google
-                        </button>
-
-
-                        <button type="submit" className="btn btn-neutral mt-4">Login</button>
-                        {/* link to go regrister */}
-                        <p>Dont Have an account ?   <Link to="/register">Regrister</Link> </p>
-                    </fieldset>
-
-
-
-
+                    <p className="text-center text-white/80 text-sm">
+                        Don’t have an account?{" "}
+                        <Link to="/register" className="text-pink-300 font-medium hover:underline">
+                            Register
+                        </Link>
+                    </p>
                 </form>
             </div>
-            <Toaster position="top-center" reverseOrder={false} />
 
-
+            <Toaster position="top-center" />
         </div>
     );
 };

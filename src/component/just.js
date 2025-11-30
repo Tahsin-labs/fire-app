@@ -12,3 +12,12 @@
     //                 ))
     //             }
     //         </section>
+
+
+
+
+    //  <li>✔ OS: {app.os}</li>
+    //                         <li>✔ Processor: {app.processor}</li>
+    //                         <li>✔ RAM: {app.ram} GB</li>
+    //                         <li>✔ Graphics: {app.graphics}</li>
+    //                         <li>✔ Storage: {app.storage}</li>

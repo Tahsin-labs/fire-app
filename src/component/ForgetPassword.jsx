@@ -1,69 +1,92 @@
-import React, { use, useRef, } from 'react';
-import { sendPasswordResetEmail } from 'firebase/auth';
+import React, { use, useRef } from "react";
+import { sendPasswordResetEmail } from "firebase/auth";
 import { toast, Toaster } from "react-hot-toast";
-import { AuthContext } from '../Provider/AuthProvider';
-import { Link } from 'react-router';
-
+import { AuthContext } from "../Provider/AuthProvider";
+import { Link } from "react-router";
 
 const ForgetPassword = () => {
-    const { auth } = use(AuthContext)
-    const emailRef = useRef(null)
-
-
+    const { auth } = use(AuthContext);
+    const emailRef = useRef(null);
 
     const handleForgetPass = (e) => {
         e.preventDefault();
         const email = emailRef.current.value;
-        console.log(email)
+
+        if (!email) {
+            toast.error("Please enter your email.");
+            return;
+        }
+
         sendPasswordResetEmail(auth, email)
             .then(() => {
                 toast.success("Password reset email sent!");
             })
-            .catch((err) => {
-                console.log(err)
+            .catch(() => {
                 toast.error("Check your email or create an account first.");
             });
     };
+
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-            <div className="bg-white w-full max-w-md shadow-lg rounded-lg p-6">
+        <div className="min-h-screen flex items-center justify-center bg-white px-6">
 
-                <h2 className="text-2xl font-semibold text-center mb-4">
-                    Reset Your Password
-                </h2>
+            {/* Left Illustration Section */}
+            <div className="hidden md:flex w-1/2 items-center justify-center">
+                <img
+                    src="https://i.ibb.co/F4g060hS/forgot-password-concept-illustration-86047-1067.jpg"
+                    alt="Forgot Illustration"
+                    className="max-w-md"
+                />
+            </div>
 
-                <form className="space-y-4">
+            {/* Right Content */}
+            <div className="w-full md:w-1/2 p-8">
+                <h1 className="text-4xl font-semibold text-gray-900">Forgot Password</h1>
+                <p className="text-gray-600 mt-2">
+                    Please enter your email address below
+                </p>
 
+                <form
+                    onSubmit={handleForgetPass}
+                    className="mt-6 space-y-6">
+
+                    {/* Email Input */}
                     <div>
-                        <label className="block text-gray-700 font-medium mb-1">
-                            Email
-                        </label>
+                        <label className="text-gray-600 block mb-1">Enter Email Address</label>
                         <input
                             type="email"
-                            name="email"
                             ref={emailRef}
-
-                            className="w-full border px-3 py-2 rounded outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="Enter your email"
+                            placeholder="Enter email address"
+                            className="
+                                w-full border-b border-gray-300 bg-transparent 
+                                focus:outline-none focus:border-blue-400
+                                py-2 text-gray-700
+                            "
                         />
                     </div>
 
+                    {/* Button */}
                     <button
-                        onClick={handleForgetPass}
-
-                        type="btn"
-                        className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+                        type="submit"
+                        className="
+                            bg-blue-400 text-white px-6 py-2 rounded-full 
+                            hover:bg-blue-500 transition
+                        "
                     >
-                        Reset Password
+                        Next
                     </button>
                 </form>
 
-                <div> <Link to="/login">  <button>Back to Loging</button>  </Link> </div>
-
-
-
+                <div className="mt-6">
+                    <Link
+                        to="/login"
+                        className="text-blue-500 hover:underline"
+                    >
+                        Back to Login
+                    </Link>
+                </div>
             </div>
-            <Toaster position="top-center" reverseOrder={false} />
+
+            <Toaster />
         </div>
     );
 };

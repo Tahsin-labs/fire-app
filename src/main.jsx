@@ -15,6 +15,8 @@ import Details from './component/Details.jsx';
 import PrivateRout from './component/PrivateRout.jsx';
 import Profile from './component/Profile.jsx';
 import ForgetPassword from './component/ForgetPassword.jsx';
+import About from './component/About.jsx';
+import Eror from './component/Eror.jsx';
 
 
 const router = createBrowserRouter([
@@ -52,6 +54,14 @@ const router = createBrowserRouter([
       {
         path: "/forget-password",
         Component: ForgetPassword
+      },
+      {
+        path: "/about",
+        Component: About
+      },
+       {
+        path: "/*",
+        Component: Eror
       }
 
 

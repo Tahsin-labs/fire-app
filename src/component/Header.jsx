@@ -16,7 +16,7 @@ const Header = () => {
 
             <div className="navbar max-w-6xl mx-auto text-white px-4">
 
-                {/* Left — Logo + Mobile Menu */}
+             
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost text-purple-300 lg:hidden">
@@ -33,15 +33,16 @@ const Header = () => {
                         >
                             <li><NavLink className="hover:text-purple-300" to="/">Home</NavLink></li>
                             <li><NavLink className="hover:text-purple-300" to="/game">Game</NavLink></li>
+                            <li><NavLink className="hover:text-purple-300" to="/about">About</NavLink></li>
                         </ul>
                     </div>
 
                     <Link to="/" className="text-2xl font-bold text-purple-400 tracking-wide">
-                        GameHub
+                        TahsinLAB..
                     </Link>
                 </div>
 
-                {/* Center — Desktop Menu */}
+              
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-4 text-sm font-semibold">
                         <li>
@@ -49,7 +50,7 @@ const Header = () => {
                                 className={({ isActive }) =>
                                     isActive
                                         ? "text-purple-300 border-b-2 border-purple-300 pb-1"
-                                        : "hover:text-purple-300"
+                                        : ""
                                 }
                                 to="/"
                             >
@@ -62,17 +63,29 @@ const Header = () => {
                                 className={({ isActive }) =>
                                     isActive
                                         ? "text-purple-300 border-b-2 border-purple-300 pb-1"
-                                        : "hover:text-purple-300"
+                                        : ""
                                 }
                                 to="/game"
                             >
                                 Game
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? "text-purple-300 border-b-2 border-purple-300 pb-1"
+                                        : ""
+                                }
+                                to="/about"
+                            >
+                                About 
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
 
-                {/* Right — User Profile / Auth Buttons */}
+              
                 <div className="navbar-end flex items-center gap-4">
 
                     {user ? (
